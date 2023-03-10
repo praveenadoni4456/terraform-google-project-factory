@@ -70,7 +70,7 @@ locals {
 /*******************************************
   Project creation
  *******************************************/
-resource "google_project" "main" {
+resource "google_project" "common-services" {
   name                = var.name
   project_id          = local.temp_project_id
   org_id              = local.project_org_id
